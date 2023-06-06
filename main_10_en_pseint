@@ -1,0 +1,16 @@
+Algoritmo PUNTO10
+    Definir l1, l2, angulo, radianes, area Como Real
+    Escribir "Ingrese el valor del lado 1: "
+    Leer l1
+	
+    Escribir "Ingrese el valor del lado 2: "
+    Leer l2
+	
+    Escribir "Ingrese el valor del ángulo en grados: "
+    Leer angulo
+	
+    area <- 0.5 * l1 * l2 * sen(radianes)
+	
+    Escribir "El área del triángulo es: ", area
+	
+FinAlgoritmo
