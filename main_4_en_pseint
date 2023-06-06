@@ -1,0 +1,19 @@
+Algoritmo PUNTO4
+	definir nota1,nota2,nota3 Como entero
+	definir notaPracticaS,notaExtra Como entero
+	definir notaFinal Como entero
+	definir notaDefinitiva Como Entero
+	Escribir "Ingrese la nota del primer examen: "
+	leer nota1
+	Escribir "Ingrese la nota del segundo examen:"
+	leer nota2
+	Escribir "Ingrese la nota del tercer examen:"
+	leer nota3
+	Escribir "Ingrese la nota de las prácticas:"
+	leer notaPracticaS
+	Escribir "Ingrese la nota Extra:"
+	leer notaExtra
+	notaFinal <- nota1+nota2+nota3+notaPracticaS+notaExtra
+	notaDefinitiva<- notaFinal/5
+	Escribir "lo nota final es:",notaDefinitiva
+FinAlgoritmo
