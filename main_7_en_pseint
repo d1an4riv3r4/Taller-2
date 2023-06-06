@@ -1,0 +1,38 @@
+Algoritmo Punto7
+	definir sueldobase, compdestino, compcrgoacademico, sueldobruto, impuestos, sueldoneto Como Real
+	Definir horasExtra, hijos, mayoresdependientes Como Entero
+	Escribir "Sueldo base:"
+	leer sueldobase
+	Escribir "Complemento de destino: "
+	leer compdestino
+	Escribir "Complemento de cargo académico: "
+	Leer compcrgoacademico
+	Escribir "Horas extra realizadas: "
+	leer horasExtra
+	Escribir "Hijos: "
+	leer hijos
+	Escribir "mayores"
+	leer mayoresdependientes
+	
+	sueldoBruto = sueldobase + compdestino + compcargoacademico + (23 * horasExtra);
+	porcentajeImpuestos = 24.0 - (2.0 * hijos) - (1.0 * mayoresdependientes);
+    impuestos = sueldobruto * (porcentajeImpuestos / 100);
+
+	sueldoneto = sueldobruto - impuestos
+	
+	Escribir "\nCalculo de la nomina\n"
+	Escribir "Sueldo base:", sueldobase
+	Escribir "Complemento de destino: ", compdestino
+	Escribir "Complemento de cargo académico", compcargoacademico
+	Escribir "Horas extra realizadas: ", horasExtra
+	Escribir "Hijos: ", hijos
+	Escribir "Mayores:", mayoresdependientes
+	Escribir "Sueldo bruto: ", sueldobruto
+	Escribir "Porcentaje de IRPF: ", porcentajeImpuestos
+	Escribir "Retención por IRPF: ", impuestos
+	Escribir "Sueldo neto: ", sueldoneto
+	
+	
+	
+	
+FinAlgoritmo
