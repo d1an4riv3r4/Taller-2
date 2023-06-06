@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    float notaExamen1, notaExamen2, notaExamenFinal;
+    float notaPracticas, notaActividadAdicional;
+    float notaFinal;
+
+    printf("Ingrese la nota del primer examen: ");
+    scanf("%f", &notaExamen1);
+
+    printf("Ingrese la nota del segundo examen: ");
+    scanf("%f", &notaExamen2);
+
+    printf("Ingrese la nota del examen final: ");
+    scanf("%f", &notaExamenFinal);
+
+    printf("Ingrese la nota de las prácticas: ");
+    scanf("%f", &notaPracticas);
+
+    printf("Ingrese la nota de la actividad adicional: ");
+    scanf("%f", &notaActividadAdicional);
+
+  
+    notaFinal = (notaExamen1 + notaExamen2 + notaExamenFinal + notaPracticas + notaActividadAdicional) / 5.0;
+
+    printf("La nota final es: %.2f\n", notaFinal);
+
+    return 0;
+}
