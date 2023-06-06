@@ -1,0 +1,14 @@
+Algoritmo conversion_segundos_hms
+    definir segundos, horas, minutos, segundos_restantes como enteros
+
+    escribir "Ingrese el tiempo transcurrido en segundos: "
+    leer segundos
+
+    horas <- segundos / 3600
+    segundos_restantes <- segundos % 3600
+    minutos <- segundos_restantes / 60
+    segundos_restantes <- segundos_restantes % 60
+
+    escribir "Equivalente: ", horas, " horas, ", minutos, " minutos, ", segundos_restantes, " segundos"
+
+FinAlgoritmo
