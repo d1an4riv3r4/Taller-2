@@ -1,0 +1,12 @@
+Algoritmo conversion_fahrenheit_celsius
+    definir fahrenheit, celsius como reales
+
+    escribir "Ingrese la temperatura en Fahrenheit: "
+    leer fahrenheit
+
+    celsius <- (fahrenheit - 32) * 5 / 9
+
+    escribir "La temperatura en Celsius es: ", celsius
+
+FinAlgoritmo
+
