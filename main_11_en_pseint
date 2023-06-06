@@ -1,0 +1,23 @@
+Algoritmo PUNTO11
+	Definir capital,intanual,plazo Como Real
+	Definir cuotamensual,totalpagado,amortizacion,intereses,ratio Como Real
+	
+	Escribir "Ingrese el capital prestado:"
+	Leer capital
+	Escribir "Ingrese el ineteres anual:"
+	Leer intanual
+	Escribir "Ingrese los años del prestamo:"
+	Leer plazo
+	
+	ratio=intanual/12.0
+	cuotamensual= capital*ratio/100.0*(1 - pow(1 + ratio / 100.0, -plazo))
+	totalpagado <- cuotamensual * plazo
+	
+    amortizacion <- capital
+    intereses <- totalpagado - amortizacion
+	
+    Escribir "Cuota mensual: ", cuotamensual
+    Escribir "Total pagado: ", totalpagado
+    Escribir "Cantidad de amortización: ", amortizacion
+    Escribir "Cantidad de intereses: ", intereses
+FinAlgoritmo
