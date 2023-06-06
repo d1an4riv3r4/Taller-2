@@ -1,0 +1,13 @@
+Algoritmo Punto6
+	Definir x Como Entero
+	Definir sigma,lambda,alfa,f Como Real
+	Definir i Como Entero
+	x <- 12
+	i <- 3
+	sigma<- 2.1836
+	lamdba <- 1.11695
+	alfa <- 328.67
+	
+	f= 3 * (x + sigma * i / (x * x - i * i)) - lambda * (alfa - 13.7)
+	Escribir "el valor de f es:",f
+FinAlgoritmo
