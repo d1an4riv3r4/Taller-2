@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <math.h>
+
+float calcularAreaTriangulo(float lado1, float lado2, float angulo);
+
+int main() {
+    float lado1, lado2, angulo, area;
+
+    printf("Ingrese el lado 1 del triángulo: ");
+    scanf("%f", &lado1);
+    printf("Ingrese el lado 2 del triángulo: ");
+    scanf("%f", &lado2);
+    printf("Ingrese el ángulo entre los lados: ");
+    scanf("%f", &angulo);
+
+    area = calcularAreaTriangulo(lado1, lado2, angulo);
+
+    printf("El área del triángulo es: %.2f\n", area);
+
+    return 0;
+}
+
+float calcularAreaTriangulo(float lado1, float lado2, float angulo) {
+    float area;
+
+    // Convertir el ángulo de grados a radianes
+    angulo = angulo * M_PI / 180;
+
+    // Calcular el área utilizando la fórmula de la ley del seno
+    area = 0.5 * lado1 * lado2 * sin(angulo);
+
+    return area;
+}
