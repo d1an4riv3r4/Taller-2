@@ -1,0 +1,11 @@
+Algoritmo PUNTO1
+	Definir pii Como real
+	definir radio,altura,volumen Como real
+	pii <-3.14
+	radio <- 14.5
+	altura <- 26.79
+	
+	volumen = pii*radio*altura/3
+	Escribir "el volumen del cono es ",volumen
+	
+FinAlgoritmo
