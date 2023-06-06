@@ -1,0 +1,23 @@
+
+Funcion area <- calcularAreaTriangulo (l1,l2,angulo)
+	
+Fin Funcion
+
+Algoritmo PUNTO9
+	Definir l1,l2,angulo Como Real
+	Definir   area Como Real
+	Escribir "Ingrese el valor del lado 1 del triangulo->:"
+	Leer l1
+	Escribir "Ingrese el valor del lado 2 del triángulo ->:"
+	Leer l2
+	Escribir "Ingrese el valor del ángulo entre los lados ->:"
+	Leer angulo
+	
+	angulo=angulo*M_PI/180
+	area=0.5*l1*l2*sen(angulo)
+	
+	Escribir "El area del triangulo es ->:", area
+	Leer area
+	
+FinAlgoritmo
+    
