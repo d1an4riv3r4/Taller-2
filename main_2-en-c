@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    float fahrenheit, celsius;
+    float fahrenheit;
+    float celsius;
 
     printf("Ingrese la temperatura en Fahrenheit: ");
     scanf("%f", &fahrenheit);
